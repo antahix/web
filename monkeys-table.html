@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Monkeys</title>
+</head>
+<body background="https://static.vecteezy.com/system/resources/previews/014/462/161/original/abstract-smooth-blur-green-background-vector.jpg" width="100%" background-repeat="no-repeat">
+    <p>
+        <h1 align="center">Список обезьян</h1>
+    </p>
+    <p>
+        <menu size="10" align="center">
+            <button type="button" onclick="document.location='monkeys.html'">Главная</button>
+            <button type="button" onclick="document.location='monkeys-table.html'">Каталог обезьян</button>
+            <button type="button">Информация о веб-ресурсе</button>
+        </menu>
+    </p>
+    <details>
+        <summary>Фильтры</summary>
+        <p>
+            <form type="text">
+                <label>Название:</label>
+                <input type="text"><br>
+            </form>
+            <form type="text">
+                <label>Длина (16 - 170):</label>
+                <input type="text"><br>
+            </form>
+            <form type="text">
+                <label>Вес (160 - 170000):</label>
+                <input type="text"><br>
+            </form>
+            <form type="text">
+                <label>Подвид:</label>
+                <input type="text"><br>
+            </form>
+            <button type="button">Найти</button>
+        </p>
+    </details>
+
+    <details>
+        <summary>Сортировка</summary>
+        <p>
+            <fieldset>
+                <legend>Выберите параметр сортировки</legend>
+              
+                <div>
+                  <input type="radio" id="huey" name="drone" value="huey" checked />
+                  <label for="huey">По первому уровню</label>
+                  <input type="checkbox" id="scales" name="scales" unchecked />
+                    <label for="scales">По убыванию</label>                  
+                </div>
+              
+                <div>
+                  <input type="radio" id="dewey" name="drone" value="dewey" />
+                  <label for="dewey">По второму уровню</label>
+                  <input type="checkbox" id="scales" name="scales" unchecked />
+                    <label for="scales">По убыванию</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="louie" name="drone" value="louie" />
+                  <label for="louie">По третьему уровню</label>
+                  <input type="checkbox" id="scales" name="scales" unchecked />
+                <label for="scales">По убыванию</label>
+                </div>
+
+            </fieldset>
+            <button type="button">Сортировать</button>
+        </p>
+    </details>
+
+    <details>
+        <summary>График</summary>
+        По оси ОХ:   <select name="OX">
+            <option value="Подвид">Подвид</option>
+            <option value="Зона обитания" selected>Зона обитания</option>
+        </select>
+            По оси ОУ:   <select name="OY">
+            <option value="Самые тяжелые">Самые тяжелые</option>
+            <option value="Самые высокие" selected>Самые высокие</option>
+            <option value="Самые долгоживущие">Самые долгоживущие</option>
+        </select>
+        <p>
+            <button type="button">Построить</button>
+        </p>
+    </details>
+
+    <table>
+        <tr>
+            <td>Фото</td>
+            <td>Название</td>
+            <td>Длина (в сантиметрах)</td>
+            <td>Вес (в граммах)</td>
+            <td>Подвид</td>
+            <td>Зона обитания</td>
+            <td>Продолжительность жизни (В годах)</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/sirihta.jpg" width="100"></td>
+            <td>Сирихта</td>
+            <td>16</td>
+            <td>160</td>
+            <td>Долгопятый примат</td>
+            <td>Тропические леса</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td><img src="https://zoopark-vl.ru/wp-content/uploads/2022/12/kapuczin-plaksa-5.jpg" width="100"></td>
+            <td>Плакса</td>
+            <td>27</td>
+            <td>250</td>
+            <td>Капуцинообразные</td>
+            <td>Тропические леса</td>
+            <td>44</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/favi-obezyana.jpg" width="100"></td>
+            <td>Фави</td>
+            <td>36</td>
+            <td>300</td>
+            <td>Широконосые</td>
+            <td>Тропические леса</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/belogrudiy-kapucin.jpg" width="100"></td>
+            <td>Белогрудый капуцин</td>
+            <td>55</td>
+            <td>400</td>
+            <td>Капуцинообразные</td>
+            <td>Южная Америка</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2021/12/saki-monah-2-544x342.jpg" width="100"></td>
+            <td>Саки-монах</td>
+            <td>48</td>
+            <td>400</td>
+            <td>Саковые</td>
+            <td>Южная Америка</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/karlikovaya-igrunka.jpg" width="100"></td>
+            <td>Карликовая игрунка</td>
+            <td>15</td>
+            <td>100</td>
+            <td>Игрунковые</td>
+            <td>Южная Америка</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/kapucin-plaksa.jpg" width="100"></td>
+            <td>Черный тамарин</td>
+            <td>23</td>
+            <td>500</td>
+            <td>Игрунковыет</td>
+            <td>Южная Америка</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2021/12/chernospinniy-tamarin.jpg" width="100"></td>
+            <td>Черноспинный тамарин</td>
+            <td>23</td>
+            <td>500</td>
+            <td>Игрунковые</td>
+            <td>Южная Америка</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2021/12/tamarin-krasnorukiy.jpg" width="100"></td>
+            <td>Краснорукий тамарин</td>
+            <td>23</td>
+            <td>500</td>
+            <td>Игрунковые</td>
+            <td>Южная Америка</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2021/12/hohlatiy-tamarin-1-544x306.jpg" width="100"></td>
+            <td>Хохлатый тамарин</td>
+            <td>35</td>
+            <td>450</td>
+            <td>Игрунковые</td>
+            <td>Южная Америка</td>
+            <td>15</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/marmozetka-544x374.jpg" width="100"></td>
+            <td>Мармозетка</td>
+            <td>22</td>
+            <td>300</td>
+            <td>Узконосые</td>
+            <td>Лиановые леса</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/martyshka-gusar.jpg" width="100"></td>
+            <td>Гусар</td>
+            <td>75</td>
+            <td>12000</td>
+            <td>Мартышковые</td>
+            <td>Африка</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/favi-obezyana.jpg" width="100"></td>
+            <td>Зеленая мартышка</td>
+            <td>50</td>
+            <td>3500</td>
+            <td>Мартышковые</td>
+            <td>Африка</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/yavanskiy-makak.jpg" width="100"></td>
+            <td>Яванский макак</td>
+            <td>65</td>
+            <td>9000</td>
+            <td>Мартышковые</td>
+            <td>Средняя азия</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/serebristyj-gibbon-544x367.jpg" width="100"></td>
+            <td>Японский макак</td>
+            <td>53</td>
+            <td>12000</td>
+            <td>Мартышковые</td>
+            <td>Япония</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/karlikovaya-igrunka.jpg" width="100"></td>
+            <td>Серебристый гиббон</td>
+            <td>70</td>
+            <td>8000</td>
+            <td>Гиббоновые</td>
+            <td>Азия</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/zheltoschekiy-hohlatiy-gibbon.jpg" width="100"></td>
+            <td>Желтощекий хохлатый гиббон</td>
+            <td>90</td>
+            <td>13000</td>
+            <td>Гиббоновые</td>
+            <td>50</td>
+            <td>Средняя Азия</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2021/12/chernospinniy-tamarin.jpg" width="100"></td>
+            <td>Восточный хулок</td>
+            <td>82</td>
+            <td>7000</td>
+            <td>Гиббоновые</td>
+            <td>Азия</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/Siamang-srostnopaliy.jpg" width="100"></td>
+            <td>Сиаманг сростнопалый</td>
+            <td>58</td>
+            <td>11000</td>
+            <td>Гиббоновые</td>
+            <td>Тропические леса</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/karlikoviy-gibbon.jpg" width="100"></td>
+            <td>Карликовый гиббон</td>
+            <td>63</td>
+            <td>6000</td>
+            <td>Гиббоновые</td>
+            <td>Ментаврийские острова</td>
+            <td>40</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/sumatranskiy-orangutan.jpg" width="100"></td>
+            <td>Суматранский орангутан</td>
+            <td>100</td>
+            <td>45000</td>
+            <td>Орангутан</td>
+            <td>30</td>
+            <td>Суматра</td>
+        </tr>
+        <tr>
+            <td><img src="https://ar.culture.ru/attachments/attachment/preview/5b02c0d145af9af40c44e9e0-preview.jpg" width="100"></td>
+            <td>Борнейский орангутан</td>
+            <td>11000</td>
+            <td>50000</td>
+            <td>Орангутан</td>
+            <td>Тропические леса</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/kalimantanskiy-orangutang.jpg" width="100"></td>
+            <td>Калимантанский орангутан</td>
+            <td>11000</td>
+            <td>50000</td>
+            <td>Орангутан</td>
+            <td>Суматра</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/yavanskiy-makak.jpg" width="100"></td>
+            <td>Береговая горилла</td>
+            <td>170</td>
+            <td>170000</td>
+            <td>Горилла</td>
+            <td>Африка</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT67YzWiyUzXdO2n8k27NN-nqnWb6cuWSb17HwUdvw6uFQNFn4bXvCuP40lag5qolySAtM&usqp=CAU" width="100"></td>
+            <td>Равнинная горилла</td>
+            <td>170</td>
+            <td>170000</td>
+            <td>Горилла</td>
+            <td>Тропические леса</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td><img src="https://img.tourister.ru/files/2/4/3/6/2/4/1/0/clones/800_533_fixedwidth.jpg?t=1696204800037" width="100"></td>
+            <td>Горная горилла</td>
+            <td>170</td>
+            <td>170000</td>
+            <td>Горилла</td>
+            <td>Африка</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td><img src="https://ecoportal.info/wp-content/uploads/2018/10/bonobo.jpg" width="100"></td>
+            <td>Бонобо</td>
+            <td>111</td>
+            <td>38000</td>
+            <td>Мартышковые</td>
+            <td>Африка</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td><img src="https://sun9-59.userapi.com/impg/l5aP33kYHhxAZWg4_MTvtAiVSgUYmJ0Y2YFESg/bm2PMuo-Wtk.jpg?size=704x807&quality=96&sign=66261bc7790bd10cacb56b8a8979823a&c_uniq_tag=62ZogWBM4oh0qDAaT7loOObIsypEe2Pz6MpN1vcjZPo&type=album" width="100"></td>
+            <td>Коронованная (голубая) мартышка</td>
+            <td>60</td>
+            <td>6000</td>
+            <td>Мартышковые</td>
+            <td>Тропические леса</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td><img src="https://animals.pibig.info/uploads/posts/2023-04/1680543751_animals-pibig-info-p-obiknovennii-shimpanze-zhivotnie-krasivo-1.jpg" width="100"></td>
+            <td>Шимпанзе обыкновенный</td>
+            <td>130</td>
+            <td>45000</td>
+            <td>Шимпанзе</td>
+            <td>Африка</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td><img src="https://avatars.dzeninfra.ru/get-zen_doc/1703615/pub_6249a9302bcf913ddf3bdadb_6249c87a9fe0ef42e5c89283/scale_1200" width="100"></td>
+            <td>Бледный саки</td>
+            <td>48</td>
+            <td>400</td>
+            <td>Саки</td>
+            <td>Южная Америка</td>
+            <td>35</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://zoopark-vl.ru/wp-content/uploads/2022/12/plashhenosnyj-pavian-3.jpg" width="100"></td>
+            <td>Плащеносный павиан</td>
+            <td>100</td>
+            <td>30000</td>
+            <td>Гамадрил</td>
+            <td>Африка</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td><img src="https://ar.culture.ru/attachments/attachment/preview/5b02c0d145af9af40c44e9e0-preview.jpg" width="100"></td>
+            <td>Кахау</td>
+            <td>72</td>
+            <td>22000</td>
+            <td>Орангутан</td>
+            <td>Калимантан</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td><img src="https://zoo-oasis.ru/wp-content/uploads/2018/12/obezyanka_saymiri_belichiy.jpg" width="100"></td>
+            <td>Саймири</td>
+            <td>30</td>
+            <td>700</td>
+            <td>Широконосые</td>
+            <td>Южная Америка</td>
+            <td>Саймири</td>
+        </tr>
+        <tr>
+            <td><img src="https://media.istockphoto.com/id/1358445493/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BE%D0%BB%D0%B8%D0%B2%D0%BA%D0%BE%D0%B2%D1%8B%D0%B9-%D0%B1%D0%B0%D0%B1%D1%83%D0%B8%D0%BD-%D1%81%D0%B8%D0%B4%D0%B8%D1%82-%D0%BD%D0%B0-%D0%BF%D0%BD%D0%B5.jpg?s=612x612&w=0&k=20&c=xvbeFdXUyVQJw6lQR2kImzdLaFl84tTHp-Zsbly9Eg8=" width="100"></td>
+            <td>Павиан анубис</td>
+            <td>100</td>
+            <td>4000</td>
+            <td>Гамадрил</td>
+            <td>Африка</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td><img src="https://img.freepik.com/premium-photo/patas-monkey-erythrocebus-patas_641010-1757.jpg" width="100"></td>
+            <td>Патас</td>
+            <td>75</td>
+            <td>12000</td>
+            <td>Мартышковые</td>
+            <td>Африка</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td><img src="https://live.staticflickr.com/65535/48101918811_aa98789f27_h.jpg" width="100"></td>
+            <td>Макак свинохвостый</td>
+            <td>65</td>
+            <td>9000</td>
+            <td>Мартышковые</td>
+            <td>Суматра</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td><img src="https://cs5.pikabu.ru/post_img/big/2014/08/07/8/1407411521_1302550962.jpg" width="100"></td>
+            <td>Макак чёрный</td>
+            <td>65</td>
+            <td>9000</td>
+            <td>Мартышковые</td>
+            <td>Тропические леса</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td><img src="https://minio.nplus1.ru/app-images/155693/a3ed4396640af166172e0fae83dc7122.jpg" width="100"></td>
+            <td>Макак львинохвостый</td>
+            <td>35</td>
+            <td>10000</td>
+            <td>Мартышковые</td>
+            <td>Тропические леса</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td><img src="https://p0.pikist.com/photos/394/888/monkey-nature-forest-mico-marmoset.jpg" width="100"></td>
+            <td>Мико</td>
+            <td>22</td>
+            <td>400</td>
+            <td>Игрунковые</td>
+            <td>Тропические леса</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td><img src="https://zooblog.ru/wp-content/uploads/2022/07/goeldis_marmoset.jpg" width="100"></td>
+            <td>Гельдиевая каллимико</td>
+            <td>23</td>
+            <td>700</td>
+            <td>Игрунковые</td>
+            <td>Южная Америка</td>
+            <td>25</td>
+        </tr>
+
+        <tr>
+            <td><img src="https://zooblog.ru/wp-content/uploads/2022/07/tamarin.jpg" width="100"></td>
+            <td>Сагуин</td>
+            <td>23</td>
+            <td>700</td>
+            <td>Тамарин</td>
+            <td>Южная Америка</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td><img src="https://zooblog.ru/wp-content/uploads/2022/07/saddle_back_tamarin.jpg" width="100"></td>
+            <td>Седловидный тамарин</td>
+            <td>23</td>
+            <td>700</td>
+            <td>Тамарин</td>
+            <td>Южная Америка</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td><img src="https://zooblog.ru/wp-content/uploads/2022/07/lion_tamarin.jpg" width="100"></td>
+            <td>Львиный игрунок</td>
+            <td>31</td>
+            <td>700</td>
+            <td>Игрунковые</td>
+            <td>Южная Америка</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td><img src="https://zooblog.ru/wp-content/uploads/2022/07/robust_capuchin_monkey.jpg" width="100"></td>
+            <td>Крепкие (хохлатые) капуцины</td>
+            <td>55</td>
+            <td>400</td>
+            <td>Капуцинообразные</td>
+            <td>Южная Америка</td>
+            <td>54</td>
+        </tr>
+        <tr>
+            <td><img src="https://zooblog.ru/wp-content/uploads/2022/07/titi_monkey.jpg" width="100"></td>
+            <td>Прыгун</td>
+            <td>61</td>
+            <td>1400</td>
+            <td>Саковые</td>
+            <td>Южная Америка</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td><img src="https://zooblog.ru/wp-content/uploads/2022/07/bearded_saki.jpg" width="100"></td>
+            <td>Мохнатые саки</td>
+            <td>51</td>
+            <td>8000</td>
+            <td>Саковые</td>
+            <td>Южная Америка</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td><img src="https://zooblog.ru/wp-content/uploads/2022/07/saki_monkey.jpg" width="100"></td>
+            <td>Питецин</td>
+            <td>50</td>
+            <td>2000</td>
+            <td>Мартышковые</td>
+            <td>Африка</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td><img src="https://zooblog.ru/wp-content/uploads/2022/07/uakari.jpg" width="100"></td>
+            <td>Уакари</td>
+            <td>50</td>
+            <td>3500</td>
+            <td>Саковые</td>
+            <td>Южная Америка</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td><img src="https://zooblog.ru/wp-content/uploads/2022/07/howler_monkey.jpg" width="100"></td>
+            <td>Ревун</td>
+            <td>70</td>
+            <td>8000</td>
+            <td>Паукообразные обезьяны</td>
+            <td>Южная Америка</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td><img src="https://zooblog.ru/wp-content/uploads/2022/07/muriqui.jpg" width="100"></td>
+            <td>Мирики</td>
+            <td>40</td>
+            <td>1000</td>
+            <td>Паукообразные обезьяны</td>
+            <td>Южная Америка</td>
+            <td>20</td>
+        </tr>
+    </table>
+</body>
+</html>
